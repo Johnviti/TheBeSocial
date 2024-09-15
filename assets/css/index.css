@@ -12,15 +12,13 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  color: #fff;
   background-color: #000;
 }
 
 /* navbar */
-
 .navbar{
   padding: 40px 80px;
-  /* position: absolute; */
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
 }
@@ -52,20 +50,215 @@ body {
  /* fim navbar  */
 
 /* hero */
-
 .hero-section{
   min-width: 100%;
   min-height: 650px;
-  background: url('/assets/images/background.png') no-repeat center;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 1) 100%
+  ),
+  url('/assets/images/background.png') no-repeat center;
+  /* background: url('/assets/images/background.png') no-repeat center;  */
   background-size: cover;
+  color: #fff;
 }
+
+.hero-content{
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.hero-content h2{
+  font-size: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+.hero-content h1{
+  font-size: 105px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: -1.05px;
+}
+
+.hero-content p{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-top: 10px;
+}
+
+/* Fim Hero  */
+
+
+/* Inicio Team  */
+.container-team{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 80px;
+  margin-top: 40px;
+}
+.content-team{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.content-team h2{
+  font-size: 52px;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.content-team p{
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 10px;
+  color: #C1C1C1;
+  padding-right: 60px;
+}
+.image-team img{
+  max-width: 100%;
+  height: 100%;
+}
+.item-skils{
+  font-size: 14px;
+  color: #fff !important;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.item-skils img{
+  width: 20px;
+  margin-right: 10px;
+}
+/* Fim Team  */
+
+
+/* Solucoes  */
+.container-solution{
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.container-solution h2{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #22E27F;
+}
+
+.container-solution h1{
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-solution{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 50px;
+  min-height: 300px;
+  padding: 0 80px;
+}
+.item-solution{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  background-color: #d9d9d91e;
+  border: 0.8px solid #5F626E;
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+.item-solution h3{
+  font-size: 32px;
+}
+/* Fim soluções */
+
+/* Serviços  */
+.container-services{
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.container-services h2{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #22E27F;
+}
+.container-services h1{
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.content-services{
+  display: flex;
+  gap: 10px;
+  padding: 0 80px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item-service{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 50px;
+  min-height: 220px;
+  width: 22%;
+}
+.item-service h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+.item-service p{
+  color: #BDBFD4;
+  font-size: 16px;
+}
+.service-image{
+  background-color: #d9d9d91e;
+  border: 0.8px solid #5F626E;
+  padding: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+}
+.service-image img{
+  width: 100%;
+  height: 100%;
+}
+/* Fim serviços */
+
+/* Qualidades  */
+
+
+
+
+/* Fim Qualidades  */
 
 .container-depoimentos {
   position: relative;
   display: flex;
-  /* flex-direction: column; */
-  /* width: 1920px;
-  height: 246px; */
   margin: 24px 0 0 0;
   z-index: 239;
   overflow: hidden;

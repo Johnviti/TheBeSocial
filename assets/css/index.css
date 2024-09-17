@@ -58,7 +58,7 @@ body {
     rgba(0, 0, 0, 0) 60%,
     rgba(0, 0, 0, 1) 100%
   ),
-  url('/assets/images/background.png') no-repeat center;
+  url('assets/images/background.png') no-repeat center;
   /* background: url('/assets/images/background.png') no-repeat center;  */
   background-size: cover;
   color: #fff;

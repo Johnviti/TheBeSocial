@@ -251,8 +251,38 @@ body {
 
 /* Qualidades  */
 
+.container-compare{
+  background-color: #fff;
+}
+.content-principal{
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
+.content-compare{
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+  gap: 20px;
+  width: 100%;
+}  
+.comparison-rows{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
 
+.comparison-row{
+  display: flex;
+}
+.comparison-item{
+  width: 60%;
+}
+.comparison-icon{
+  width: 20%;
+}
 
 /* Fim Qualidades  */
 

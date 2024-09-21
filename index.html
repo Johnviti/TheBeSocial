@@ -27,7 +27,7 @@
       </header>
       <div class="hero-content">
           <h2>DIGITAL DESIGN AGENCY</h2>
-          <h1>Nosso Social, <br> Vai além da media.</h1>
+          <h1>Nosso <span class="highlight">Social,</span><br><span class="highlight">Vai além</span> da media. </h1>
           <p>
             Conectamos marcas a pessoas através de estratégias que vão além do comum.
           </p>
@@ -549,6 +549,17 @@
       </div>
     </div>
   </footer>
+  <script>
+    const highlights = document.querySelectorAll('.highlight');
+    
+    window.addEventListener('load', () => {
+      highlights.forEach((highlight, index) => {
+        setTimeout(() => {
+          highlight.classList.add('show');
+        }, index * 850); 
+      });
+    });
+  </script>
   </body>
 </html>
 

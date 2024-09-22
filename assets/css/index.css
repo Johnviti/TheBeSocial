@@ -14,6 +14,11 @@ body {
   line-height: 1.5;
   color: #fff;
   background-color: #000;
+  overflow-x: hidden;
+}
+
+body *{
+  z-index: 1;
 }
 
 /* navbar */
@@ -602,3 +607,70 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+
+.ellipse {
+  position: absolute;
+  width: 640px;
+  height: 640px;
+  border-radius: 50%;
+  filter: blur(350px);
+  opacity: 0.8;
+  z-index: 0 !important;
+}
+
+.green {
+  background-color: #0F493B;
+}
+.red {
+  background-color: #421220;
+}
+
+.ellipse-1 {
+  left: -99px;
+  top: -202px;
+}
+
+.ellipse-2 {
+  left: 1141px;
+  top: -47px;
+}
+
+.ellipse-3 {
+  left: -99px;
+  top: 661px;
+}
+
+.ellipse-4 {
+  left: 1171px;
+  top: 740px;
+}
+
+.ellipse-5 {
+  left: 807px;
+  top: 1374px;
+}
+
+.ellipse-6 {
+  left: -238px;
+  top: 3060px;
+}
+
+.ellipse-7 {
+  left: 1191px;
+  top: 2923px;
+}
+
+.ellipse-8 {
+  left: -70px;
+  top: 4065px;
+}
+
+.ellipse-9 {
+  left: 1235px;
+  top: 4061px;
+}
+/* 
+.ellipse-10 {
+  left: 400px;
+  top: 800px;
+} */

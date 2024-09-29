@@ -787,6 +787,44 @@
   <div class="ellipse red ellipse-9"></div> -->
   <script>
     gsap.registerPlugin(ScrollTrigger);
+
+    // Animação para os textos e skills
+  gsap.from(".content-team h2, .content-team p", {
+    opacity: 0,
+    y: 50, // Move para baixo antes de aparecer
+    duration: 1.2,
+    stagger: 0.2, // Efeito em cascata
+    scrollTrigger: {
+      trigger: ".container-team", // O elemento que aciona a animação
+      start: "top 80%", // Início da animação
+      toggleActions: "play none none none", // Executa apenas uma vez
+    },
+  });
+
+  // Animação para a imagem
+  gsap.from(".image-team", {
+    opacity: 0, // Começa invisível
+    x: -50, // Mover para a esquerda
+    duration: 1.2,
+    scrollTrigger: {
+      trigger: ".container-team", // O elemento que aciona a animação
+      start: "top 80%", // Início da animação
+      toggleActions: "play none none none", // Executa apenas uma vez
+    },
+  });
+
+  gsap.from(".item-solution", {
+      opacity: 0,
+      y: 100, // Move os elementos de baixo para cima
+      duration: 1.2,
+      stagger: 0.3, // Efeito em cascata
+      ease: "power3.out", // Animação suave
+      scrollTrigger: {
+        trigger: ".container-solution", // Elemento que dispara a animação
+        start: "top 80%", // Começa quando o topo da seção atinge 80% da viewport
+        toggleActions: "play none none none", // A animação é executada uma única vez
+      },
+    });
   
     // Animação para cada item-service
     gsap.from(".item-service", {
@@ -800,6 +838,20 @@
         toggleActions: "play none none none", // Executa a animação apenas uma vez
       },
     });
+    
+    gsap.utils.toArray(".big-text .title-text, .big-text .title-text-outline").forEach((text, index) => {
+    gsap.from(text, {
+      opacity: 0,
+      y: 20, // Move para baixo antes de aparecer
+      duration: 1,
+      delay: index * 0.5, // Atraso baseado no índice
+      scrollTrigger: {
+        trigger: ".big-text", // O elemento que aciona a animação
+        start: "top 80%", // Início da animação
+        toggleActions: "play none none none", // Executa apenas uma vez
+      },
+    });
+  });
   </script>
   
   <script>

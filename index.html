@@ -821,7 +821,7 @@
       ease: "power3.out", // Animação suave
       scrollTrigger: {
         trigger: ".container-solution", // Elemento que dispara a animação
-        start: "top 80%", // Começa quando o topo da seção atinge 80% da viewport
+        start: "top 40%", // Começa quando o topo da seção atinge 80% da viewport
         toggleActions: "play none none none", // A animação é executada uma única vez
       },
     });
@@ -834,11 +834,11 @@
       stagger: 0.3, // Delay entre os itens para criar efeito em cascata
       scrollTrigger: {
         trigger: ".container-services", // O elemento que acionará a animação
-        start: "top 80%", // Começa quando o topo do container estiver a 80% da viewport
+        start: "top 40%", // Começa quando o topo do container estiver a 80% da viewport
         toggleActions: "play none none none", // Executa a animação apenas uma vez
       },
     });
-    
+
     gsap.utils.toArray(".big-text .title-text, .big-text .title-text-outline").forEach((text, index) => {
     gsap.from(text, {
       opacity: 0,
@@ -847,7 +847,7 @@
       delay: index * 0.5, // Atraso baseado no índice
       scrollTrigger: {
         trigger: ".big-text", // O elemento que aciona a animação
-        start: "top 80%", // Início da animação
+        start: "top 40%", // Início da animação
         toggleActions: "play none none none", // Executa apenas uma vez
       },
     });

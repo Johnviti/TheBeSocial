@@ -84,8 +84,7 @@ body *{
     to bottom,
     rgba(0, 0, 0, 0) 60%,
     rgba(0, 0, 0, 1) 100%
-  ),
-  url('/assets/images/background.png') no-repeat center;
+  );
   /* background: url('/assets/images/background.png') no-repeat center;  */
   background-size: cover;
   color: #fff;
@@ -177,7 +176,7 @@ body *{
 .content-team p{
   font-size: 18px;
   font-family: "Space Grotesk", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   color: #C1C1C1;
   padding-right: 60px;
 }
@@ -262,14 +261,24 @@ body *{
   text-transform: uppercase;
 }
 
-.content-solution{
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
+.content-solution {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   margin-top: 50px;
-  min-height: 300px;
   padding: 0 80px;
+  min-height: 300px;
 }
+/* .content-solution{
+   display: flex;
+  justify-content: space-between; 
+  gap: 40px;
+  
+  min-height: 300px;
+  
+} */
+
+
 .item-solution{
   display: flex;
   flex-direction: column;
@@ -284,7 +293,7 @@ body *{
 }
 
 .item-solution h3{
-  font-size: 32px;
+  font-size: 24px;
 }
 @keyframes blinkShadowsFilter {
   0% {
@@ -356,10 +365,10 @@ body *{
 }
 .service-image{
   background-color: #d9d9d91e;
-  border: 0.8px solid #5F626E;
-  padding: 16px;
-  width: 20px;
-  height: 20px;
+  border: 0.8px solid #ffffff1e;
+  padding: 6px;
+  width: 56px;
+  height: 56px;
   border-radius: 12px;
 }
 .service-image img{

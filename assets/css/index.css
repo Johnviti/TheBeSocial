@@ -293,7 +293,12 @@ body *{
 }
 
 .item-solution h3{
-  font-size: 24px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.item-solution p{
+  font-size: 19px;
 }
 @keyframes blinkShadowsFilter {
   0% {

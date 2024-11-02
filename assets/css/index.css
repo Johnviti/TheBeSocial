@@ -954,8 +954,8 @@ body *{
 
 .progress-wrap {
 	position: fixed;
-	right: 50px;
-	bottom: 50px;
+  left: 25px;
+  bottom: 20px;
 	height: 46px;
 	width: 46px;
 	cursor: pointer;
